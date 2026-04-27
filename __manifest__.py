@@ -13,11 +13,16 @@
 
     'data': [
         'security/ir.model.access.csv',
-        'data/hr_hospital.xml',
+        'data/disease_data.xml',
+        'views/hr_hospital_appointment_views.xml',
+        'views/hr_hospital_disease_views.xml',
+        'views/hr_hospital_doctor_views.xml',
+        'views/hr_hospital_patient_views.xml',
+        'views/hr_hospital_menu.xml',
     ],
 
     'demo': [
-        'demo/hr_hospital.xml',
+        'demo/demo_data.xml',
     ],
 
     'installable': True,

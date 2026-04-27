@@ -10,7 +10,7 @@ class HrHospitalAppointment(models.Model):
     _rec_name = 'appointment_datetime'
 
     appointment_datetime = fields.Datetime(
-        string="Appointment and time",
+        string="Appointment date and time",
         default=fields.Datetime.now,
         required=True,
     )
