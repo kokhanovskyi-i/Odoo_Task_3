@@ -1,5 +1,4 @@
 {
-
     'name': 'HR Hospital',
     'summary': 'Hospital management system',
     'author': 'Kokhanovskyi Ivan',
@@ -12,12 +11,20 @@
         'base',
     ],
 
+    'data': [
+        'security/ir.model.access.csv',
+        'data/hr_hospital.xml',
+    ],
+
+    'demo': [
+        'demo/hr_hospital.xml',
+    ],
+
     'installable': True,
-    'auto_install': False,
     'application': True,
+    'auto_install': False,
 
     'images': [
         'static/description/icon.png'
     ],
-
 }
