@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="doctor_hlus" model="hr.hospital.doctor">
+        <field name="name">Dr. Hlus</field>
+        <field name="specialty">Diagnostics</field>
+        <field name="email">dr_hlus@example.com</field>
+        <field name="phone">+380671234567</field>
+    </record>
+
+    <record id="doctor_clus" model="hr.hospital.doctor">
+        <field name="name">Dr. Clus</field>
+        <field name="specialty">Diagnostics</field>
+        <field name="email">dr_clus@example.com</field>
+        <field name="phone">+380671234567</field>
+    </record>
+
+    <record id="doctor_plus" model="hr.hospital.doctor">
+        <field name="name">Dr. Plus</field>
+        <field name="specialty">Diagnostics</field>
+        <field name="email">dr_plus@example.com</field>
+        <field name="phone">+380671234567</field>
+    </record>
+</odoo>
