@@ -27,6 +27,7 @@
         <field name="gender">male</field>
         <field name="email">patient_smith@example.com</field>
         <field name="phone">+380671234567</field>
+        <field name="doctor_id" ref="doctor_hlus"/>
     </record>
 
     <record id="patient_doe" model="hr.hospital.patient">
@@ -35,6 +36,7 @@
         <field name="gender">male</field>
         <field name="email">patient_doe@example.com</field>
         <field name="phone">+380671234567</field>
+        <field name="doctor_id" ref="doctor_clus"/>
     </record>
 
     <record id="patient_twister" model="hr.hospital.patient">
@@ -43,5 +45,6 @@
         <field name="gender">male</field>
         <field name="email">patient_twister@example.com</field>
         <field name="phone">+380671234567</field>
+        <field name="doctor_id" ref="doctor_plus"/>
     </record>
 </odoo>
