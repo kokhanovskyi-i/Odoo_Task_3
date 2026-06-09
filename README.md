@@ -1,47 +1,25 @@
-# HR Hospital Module (Odoo)
+# HR Hospital Module
 
-## Description
-The **HR Hospital** module was developed as part of an Odoo training task.  
-Its purpose is to implement a basic hospital management system for handling patients, doctors, and appointments.
+HR Hospital is a training module for Odoo 19.
 
-The module extends Odoo functionality and demonstrates the use of models, relationships, and business logic.
-
----
+The module implements a basic hospital management system for working with doctors, patients, diseases and patient appointments.
 
 ## Features
 
-### Patients
-- Create and manage patient records
-- Store information such as:
-  - Name
-  - Date of birth
-  - Gender
-  - Medical history
+- Doctors management
+- Patients management
+- Diseases management
+- Patient appointments management
+- Basic master data
+- Demo data
 
-### Doctors
-- Manage doctor records
-- Store specialization
-- Link doctors with patients
+## Technical information
 
-### Appointments
-- Schedule appointments
-- Define relationships between:
-  - Patient and doctor
-- Set date and time
-- Track status
-
----
-
-## Technical Details
-
-- Framework: Odoo 19.0
+- Odoo version: 19.0
+- Module name: hr_hospital
 - Language: Python
-- ORM: Odoo ORM for database operations
-
----
+- Framework: Odoo ORM
 
 ## Installation
 
-1. Place the module in the `custom_addons` directory
-2. Update app list in Odoo
-3. Install the module
+Copy the module to the custom addons directory, update the apps list and install the HR Hospital module.
