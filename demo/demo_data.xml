@@ -3,6 +3,7 @@
     <record id="doctor_hlus" model="hr.hospital.doctor">
         <field name="name">Dr. Hlus</field>
         <field name="specialty">Diagnostics</field>
+        <field name="category_id" ref="doctor_category_highest"/>
         <field name="email">dr_hlus@example.com</field>
         <field name="phone">+380671234567</field>
     </record>
@@ -10,6 +11,7 @@
     <record id="doctor_clus" model="hr.hospital.doctor">
         <field name="name">Dr. Clus</field>
         <field name="specialty">Diagnostics</field>
+        <field name="category_id" ref="doctor_category_specialist"/>
         <field name="email">dr_clus@example.com</field>
         <field name="phone">+380671234567</field>
     </record>
@@ -17,6 +19,7 @@
     <record id="doctor_plus" model="hr.hospital.doctor">
         <field name="name">Dr. Plus</field>
         <field name="specialty">Diagnostics</field>
+        <field name="category_id" ref="doctor_category_intern"/>
         <field name="email">dr_plus@example.com</field>
         <field name="phone">+380671234567</field>
     </record>
@@ -46,5 +49,30 @@
         <field name="email">patient_twister@example.com</field>
         <field name="phone">+380671234567</field>
         <field name="doctor_id" ref="doctor_plus"/>
+    </record>
+
+    <record id="doctor_history_smith_hlus" model="hospital.doctor.history">
+        <field name="patient_id" ref="patient_smith"/>
+        <field name="doctor_id" ref="doctor_hlus"/>
+        <field name="assignment_date">2025-01-10</field>
+        <field name="doctor_change_date">2025-04-15</field>
+    </record>
+
+    <record id="doctor_history_smith_clus" model="hospital.doctor.history">
+        <field name="patient_id" ref="patient_smith"/>
+        <field name="doctor_id" ref="doctor_clus"/>
+        <field name="assignment_date">2025-04-16</field>
+    </record>
+
+    <record id="doctor_history_doe_clus" model="hospital.doctor.history">
+        <field name="patient_id" ref="patient_doe"/>
+        <field name="doctor_id" ref="doctor_clus"/>
+        <field name="assignment_date">2025-02-05</field>
+    </record>
+
+    <record id="doctor_history_twister_plus" model="hospital.doctor.history">
+        <field name="patient_id" ref="patient_twister"/>
+        <field name="doctor_id" ref="doctor_plus"/>
+        <field name="assignment_date">2025-03-12</field>
     </record>
 </odoo>

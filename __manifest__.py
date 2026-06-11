@@ -19,6 +19,7 @@
         'views/hr_hospital_disease_views.xml',
         'views/hr_hospital_doctor_views.xml',
         'views/hospital_doctor_category_views.xml',
+        'views/hospital_doctor_history_views.xml',
         'views/hr_hospital_patient_views.xml',
         'views/hr_hospital_menu.xml',
     ],
