@@ -22,4 +22,5 @@ The module implements a basic hospital management system for working with doctor
 
 ## Installation
 
-Copy the module to the custom addons directory, update the apps list and install the HR Hospital module.
+
+Copy the module to the custom addons directory as hr_hospital, update the apps list and install the HR Hospital module.

@@ -20,7 +20,7 @@
               action="action_hr_hospital_patient"
               sequence="20"/>
 
-        <menuitem id="menu_hospital_doctor_history"
+    <menuitem id="menu_hospital_doctor_history"
               name="Personal Doctor History"
               parent="menu_hr_hospital_root"
               action="action_hospital_doctor_history"
