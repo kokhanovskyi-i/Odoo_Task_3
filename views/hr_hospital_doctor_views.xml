@@ -7,6 +7,16 @@
             <list>
                 <field name="name"/>
                 <field name="specialty"/>
+                <field name="category_id"/>
+                <field name="is_intern"/>
+                <field name="mentor_id"/>
+                <field name="user_id"/>
+                <field name="birth_date"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="blood_type"/>
+                <field name="email"/>
+                <field name="phone"/>
             </list>
         </field>
     </record>
@@ -18,8 +28,26 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="specialty"/>
+                        <group string="General Information">
+                            <field name="name"/>
+                            <field name="specialty"/>
+                            <field name="category_id"/>
+                            <field name="is_intern" readonly="1"/>
+                            <field name="mentor_id"
+                                   invisible="not is_intern"
+                                   domain="[('is_intern', '=', False)]"/>
+                            <field name="user_id"/>
+                        </group>
+
+                        <group string="Medical Information">
+                            <field name="birth_date"/>
+                            <field name="age" readonly="1"/>
+                            <field name="gender"/>
+                            <field name="blood_type"/>
+                        </group>
+                    </group>
+
+                    <group string="Contacts">
                         <field name="email"/>
                         <field name="phone"/>
                     </group>

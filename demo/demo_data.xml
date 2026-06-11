@@ -4,14 +4,21 @@
         <field name="name">Dr. Hlus</field>
         <field name="specialty">Diagnostics</field>
         <field name="category_id" ref="doctor_category_highest"/>
-        <field name="email">dr_hlus@example.com</field>
-        <field name="phone">+380671234567</field>
+        <field name="birth_date">1959-05-15</field>
+        <field name="gender">male</field>
+        <field name="blood_type">o_positive</field>
+        <field name="user_id" ref="base.user_admin"/>
+        <field name="email">house@example.com</field>
+        <field name="phone">+380671111111</field>
     </record>
 
     <record id="doctor_clus" model="hr.hospital.doctor">
         <field name="name">Dr. Clus</field>
         <field name="specialty">Diagnostics</field>
         <field name="category_id" ref="doctor_category_specialist"/>
+        <field name="birth_date">1980-03-21</field>
+        <field name="gender">female</field>
+        <field name="blood_type">a_positive</field>
         <field name="email">dr_clus@example.com</field>
         <field name="phone">+380671234567</field>
     </record>
@@ -20,6 +27,10 @@
         <field name="name">Dr. Plus</field>
         <field name="specialty">Diagnostics</field>
         <field name="category_id" ref="doctor_category_intern"/>
+        <field name="birth_date">1997-09-10</field>
+        <field name="gender">male</field>
+        <field name="blood_type">b_negative</field>
+        <field name="mentor_id" ref="doctor_hlus"/>
         <field name="email">dr_plus@example.com</field>
         <field name="phone">+380671234567</field>
     </record>
