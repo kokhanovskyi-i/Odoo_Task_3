@@ -23,6 +23,11 @@ class HrHospitalDisease(models.Model):
         required=True,
     )
 
+    display_name = fields.Char(
+        compute="_compute_display_name",
+        recursive=True,
+    )
+
     parent_id = fields.Many2one(
         comodel_name="hr.hospital.disease",
         string="Parent Disease",
