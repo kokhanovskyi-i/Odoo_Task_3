@@ -28,27 +28,33 @@
         <field name="name">John Smith</field>
         <field name="birth_date">1989-12-15</field>
         <field name="gender">male</field>
+        <field name="blood_type">a_positive</field>
         <field name="email">patient_smith@example.com</field>
         <field name="phone">+380671234567</field>
-        <field name="doctor_id" ref="doctor_hlus"/>
+        <field name="personal_doctor_id" ref="doctor_hlus"/>
+        <field name="insurance_policy_number">POL-0000000001</field>
     </record>
 
     <record id="patient_doe" model="hr.hospital.patient">
         <field name="name">John Doe</field>
         <field name="birth_date">1989-12-15</field>
         <field name="gender">male</field>
+        <field name="blood_type">o_positive</field>
         <field name="email">patient_doe@example.com</field>
         <field name="phone">+380671234567</field>
-        <field name="doctor_id" ref="doctor_clus"/>
+        <field name="personal_doctor_id" ref="doctor_clus"/>
+        <field name="insurance_policy_number">POL-0000000002</field>
     </record>
 
     <record id="patient_twister" model="hr.hospital.patient">
         <field name="name">John Twister</field>
         <field name="birth_date">1989-12-15</field>
         <field name="gender">male</field>
+        <field name="blood_type">b_negative</field>
         <field name="email">patient_twister@example.com</field>
         <field name="phone">+380671234567</field>
-        <field name="doctor_id" ref="doctor_plus"/>
+        <field name="personal_doctor_id" ref="doctor_plus"/>
+        <field name="insurance_policy_number">POL-0000000003</field>
     </record>
 
     <record id="doctor_history_smith_hlus" model="hospital.doctor.history">

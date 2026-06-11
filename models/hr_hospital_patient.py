@@ -1,27 +1,17 @@
 import logging
 
 from odoo import fields, models
-from ..const import GENDER_LIST
 
 _logger = logging.getLogger(__name__)
+
 
 class HrHospitalPatient(models.Model):
     _name = "hr.hospital.patient"
     _description = "Hospital patient"
+    _inherit = ["hospital.medic.info"]
 
     name = fields.Char(
         string="Name",
-        required=True,
-    )
-
-    birth_date = fields.Date(
-        string="Birth date",
-        required=True,
-    )
-
-    gender = fields.Selection(
-        selection=GENDER_LIST,
-        string="Gender",
         required=True,
     )
 
@@ -33,8 +23,18 @@ class HrHospitalPatient(models.Model):
         string="Phone",
     )
 
-    doctor_id = fields.Many2one(
-        comodel_name='hr.hospital.doctor',
-        string="Doctor",
-        required=True,
+    personal_doctor_id = fields.Many2one(
+        comodel_name="hr.hospital.doctor",
+        string="Personal Doctor",
+    )
+
+    doctor_history_ids = fields.One2many(
+        comodel_name="hospital.doctor.history",
+        inverse_name="patient_id",
+        string="Personal Doctor History",
+    )
+
+    insurance_policy_number = fields.Char(
+        string="Insurance Policy Number",
+        size=20,
     )
