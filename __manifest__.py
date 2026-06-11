@@ -14,9 +14,12 @@
     'data': [
         'security/ir.model.access.csv',
         'data/disease_data.xml',
+        'data/doctor_category_data.xml',
         'views/hr_hospital_appointment_views.xml',
         'views/hr_hospital_disease_views.xml',
         'views/hr_hospital_doctor_views.xml',
+        'views/hospital_doctor_category_views.xml',
+        'views/hospital_doctor_history_views.xml',
         'views/hr_hospital_patient_views.xml',
         'views/hr_hospital_menu.xml',
     ],

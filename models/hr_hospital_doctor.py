@@ -18,6 +18,11 @@ class HrHospitalDoctor(models.Model):
         required=True,
     )
 
+    category_id = fields.Many2one(
+        comodel_name="hospital.doctor.category",
+        string="Category",
+    )
+
     email = fields.Char(
         string="Email",
         required=True,

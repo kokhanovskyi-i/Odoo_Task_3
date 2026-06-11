@@ -8,11 +8,23 @@
               action="action_hr_hospital_doctor"
               sequence="10"/>
 
+    <menuitem id="menu_hospital_doctor_categories"
+              name="Doctor Categories"
+              parent="menu_hr_hospital_root"
+              action="action_hospital_doctor_category"
+              sequence="15"/>
+
     <menuitem id="menu_hr_hospital_patients"
               name="Patients"
               parent="menu_hr_hospital_root"
               action="action_hr_hospital_patient"
               sequence="20"/>
+
+        <menuitem id="menu_hospital_doctor_history"
+              name="Personal Doctor History"
+              parent="menu_hr_hospital_root"
+              action="action_hospital_doctor_history"
+              sequence="25"/>
 
     <menuitem id="menu_hr_hospital_diseases"
               name="Diseases"
