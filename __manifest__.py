@@ -21,6 +21,8 @@
         'views/hospital_doctor_category_views.xml',
         'views/hospital_doctor_history_views.xml',
         'views/hr_hospital_patient_views.xml',
+        'views/mass_reassign_doctor_wizard_views.xml',
+        'views/visit_report_wizard_views.xml',
         'views/hr_hospital_menu.xml',
     ],
 
