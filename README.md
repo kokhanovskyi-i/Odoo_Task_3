@@ -1,6 +1,6 @@
 # HR Hospital Module
 
-HR Hospital is a training module for Odoo 19
+HR Hospital is a training module for Odoo 19.0
 
 The module implements a basic hospital management system for working with doctors, patients, diseases and patient appointments.
 
