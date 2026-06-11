@@ -92,4 +92,60 @@
         <field name="doctor_id" ref="doctor_plus"/>
         <field name="assignment_date">2025-03-12</field>
     </record>
+
+    <record id="appointment_smith_planned" model="hr.hospital.appointment">
+        <field name="status">planned</field>
+        <field name="planned_datetime">2026-07-01 09:00:00</field>
+        <field name="doctor_id" ref="doctor_hlus"/>
+        <field name="patient_id" ref="patient_smith"/>
+        <field name="disease_id" ref="disease_flu"/>
+        <field name="summary">&lt;p&gt;Initial planned consultation.&lt;/p&gt;</field>
+    </record>
+
+    <record id="appointment_smith_done" model="hr.hospital.appointment">
+        <field name="status">done</field>
+        <field name="planned_datetime">2026-06-01 10:00:00</field>
+        <field name="visit_datetime">2026-06-01 10:05:00</field>
+        <field name="doctor_id" ref="doctor_hlus"/>
+        <field name="patient_id" ref="patient_smith"/>
+        <field name="disease_id" ref="disease_flu"/>
+        <field name="summary">&lt;p&gt;Patient examined. Treatment assigned.&lt;/p&gt;</field>
+    </record>
+
+    <record id="appointment_doe_planned" model="hr.hospital.appointment">
+        <field name="status">planned</field>
+        <field name="planned_datetime">2026-07-02 11:30:00</field>
+        <field name="doctor_id" ref="doctor_clus"/>
+        <field name="patient_id" ref="patient_doe"/>
+        <field name="disease_id" ref="disease_covid"/>
+        <field name="summary">&lt;p&gt;Follow-up planned visit.&lt;/p&gt;</field>
+    </record>
+
+    <record id="appointment_doe_done" model="hr.hospital.appointment">
+        <field name="status">done</field>
+        <field name="planned_datetime">2026-06-03 13:00:00</field>
+        <field name="visit_datetime">2026-06-03 13:10:00</field>
+        <field name="doctor_id" ref="doctor_clus"/>
+        <field name="patient_id" ref="patient_doe"/>
+        <field name="disease_id" ref="disease_covid"/>
+        <field name="summary">&lt;p&gt;Visit completed successfully.&lt;/p&gt;</field>
+    </record>
+
+    <record id="appointment_twister_cancelled" model="hr.hospital.appointment">
+        <field name="status">cancelled</field>
+        <field name="planned_datetime">2026-06-15 15:00:00</field>
+        <field name="doctor_id" ref="doctor_plus"/>
+        <field name="patient_id" ref="patient_twister"/>
+        <field name="disease_id" ref="disease_cold"/>
+        <field name="summary">&lt;p&gt;Visit cancelled by patient.&lt;/p&gt;</field>
+    </record>
+
+    <record id="appointment_twister_planned" model="hr.hospital.appointment">
+        <field name="status">planned</field>
+        <field name="planned_datetime">2026-07-05 16:30:00</field>
+        <field name="doctor_id" ref="doctor_hlus"/>
+        <field name="patient_id" ref="patient_twister"/>
+        <field name="disease_id" ref="disease_cold"/>
+        <field name="summary">&lt;p&gt;Consultation is planned.&lt;/p&gt;</field>
+    </record>
 </odoo>
