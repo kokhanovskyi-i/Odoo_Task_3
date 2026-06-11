@@ -8,6 +8,12 @@
               action="action_hr_hospital_doctor"
               sequence="10"/>
 
+    <menuitem id="menu_hospital_doctor_categories"
+              name="Doctor Categories"
+              parent="menu_hr_hospital_root"
+              action="action_hospital_doctor_category"
+              sequence="15"/>
+
     <menuitem id="menu_hr_hospital_patients"
               name="Patients"
               parent="menu_hr_hospital_root"
